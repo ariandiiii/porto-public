@@ -9,7 +9,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="icon" href="../image/logo.jpg" type="image/png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="icon" href="../image/logo.jpg" type="image/png" />
     <link rel="stylesheet" href="style/gaya.css" />
     <title>Porto</title>
   </head>
@@ -27,7 +29,7 @@
     };
 
     function printResume() {
-      // ganti "resume.pdf" dengan nama file resume lu
+      
       var win = window.open("file/cv.pdf", "_blank");
       win.onload = function () {
         win.print();
@@ -100,7 +102,7 @@
               and user-friendly interfaces.
             </p>
             <div class="flex justify-center lg:justify-start gap-6 mt-4">
-              <a href="mailto:saputraariandi4@gmail.com" class="ophub"
+              <a href="mailto:ariandi.saputraaa@gmail.com" class="ophub"
                 >Email Me</a
               >
             </div>
@@ -132,29 +134,34 @@
         <div>
           <p
             class="text-center mx-auto text-[#fff380] text-[20px] font-bold md:text-[25px]"
+            data-aos="fade-up"
           >
             About Me
           </p>
           <hr
             class="text-[#fff380] w-20 mb-3 rounded-[6px] border-t-2 mx-auto item-center md:border-t-4 mb:w-25"
+            data-aos="fade-up"
           />
           <div
             class="hidden text-[#e0fbfc] gap-5 mb-3 flex-wrap md:block md:justify-center md:flex"
           >
-            <div class="gap-2 flex items-center">
+            <div class="gap-2 flex items-center" data-aos="fade-right">
               <img src="image/point.png" alt="" class="w-4 h-auto" />
               <p>Indonesia</p>
             </div>
-            <div class="gap-2 flex items-center">
+            <div class="gap-2 flex items-center" data-aos="fade-up">
               <img src="image/calendar.png" alt="" class="w-4 h-auto" />
               <p>2+ years experience</p>
             </div>
-            <div class="gap-2 flex items-center">
+            <div class="gap-2 flex items-center" data-aos="fade-left">
               <img src="image/target.png" alt="" class="w-4 h-auto" />
               <p>UI/UX focus</p>
             </div>
           </div>
-          <p class="text-center text-[15px] text-[#e0fbfc] md:text-[17px]">
+          <p
+            class="text-center text-[15px] text-[#e0fbfc] md:text-[17px]"
+            data-aos="fade-up"
+          >
             I’m from Indonesia and currently focusing on UI/UX design while
             studying at a vocational high school. I’ve been learning and working
             on mobile and web interface projects since 2023 using tools like
@@ -167,70 +174,102 @@
           </p>
         </div>
         <hr class="text-[#e0fbfc]" />
+
+        <!-- bagian service -->
         <div
           class="flex justify-center gap-10 flex-wrap mx-auto text-[#e0fbfc] max-w-7xl"
         >
           <div class="flex flex-col flex-1 gap-5 min-w-[250px]">
             <p
               class="text-[#fff380] text-center text-[20px] font-bold md:text-[25px]"
+              data-aos="fade-right"
             >
               Services
             </p>
-            <div
-              class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px] hover:scale-105 duration-300 transition-transform"
-            >
-              <img src="image/pallete.png" alt="" class="w-7" />
-              <p class="text-[18px] text-[#e0fbfc]">UI/UX Design</p>
+
+            <div data-aos="fade-right">
+              <div
+                class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px] hover:scale-105 duration-300 transition-transform"
+              >
+                <img src="image/pallete.png" alt="" class="w-7" />
+                <p class="text-[18px] text-[#e0fbfc]">UI/UX Design</p>
+              </div>
             </div>
-            <div
-              class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px] hover:scale-105 duration-300 transition-transform"
-            >
-              <img src="image/code.png" alt="" class="w-7" />
-              <p class="text-[18px] text-[#e0fbfc]">Web Development</p>
+
+            <div data-aos="fade-right">
+              <div
+                class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px] hover:scale-105 duration-300 transition-transform"
+              >
+                <img src="image/code.png" alt="" class="w-7" />
+                <p class="text-[18px] text-[#e0fbfc]">Web Development</p>
+              </div>
             </div>
-            <div
-              class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px] hover:scale-105 duration-300 transition-transform"
-            >
-              <img src="image/dimensions.png" alt="" class="w-7" />
-              <p class="text-[18px] text-[#e0fbfc]">Prototyping</p>
+
+            <div data-aos="fade-right">
+              <div
+                class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px] hover:scale-105 duration-300 transition-transform"
+              >
+                <img src="image/dimensions.png" alt="" class="w-7" />
+                <p class="text-[18px] text-[#e0fbfc]">Prototyping</p>
+              </div>
             </div>
-            <div
-              class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px] hover:scale-105 duration-300 transition-transform"
-            >
-              <img src="image/wireframe.png" alt="" class="w-7" />
-              <p class="text-[18px] text-[#e0fbfc]">Wireframing</p>
+
+            <div data-aos="fade-right">
+              <div
+                class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px] hover:scale-105 duration-300 transition-transform"
+              >
+                <img src="image/wireframe.png" alt="" class="w-7" />
+                <p class="text-[18px] text-[#e0fbfc]">Wireframing</p>
+              </div>
             </div>
           </div>
 
           <div class="flex flex-col flex-1 gap-5 min-w-[250px]">
             <p
               class="text-[#fff380] text-center text-[20px] font-bold md:text-[25px]"
+              data-aos="fade-left"
             >
               Tools
             </p>
-            <div
-              class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px] hover:scale-105 duration-300 transition-transform"
-            >
-              <img src="image/figma (1).png" alt="" class="w-7" />
-              <p class="text-[18px] text-[#e0fbfc]">Figma</p>
+
+            <div data-aos="fade-left">
+              <div
+                class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px] hover:scale-105 duration-300 transition-transform"
+              >
+                <img src="image/figma (1).png" alt="" class="w-7" />
+                <p class="text-[18px] text-[#e0fbfc]">Figma</p>
+              </div>
             </div>
-            <div
-              class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px] hover:scale-105 duration-300 transition-transform"
-            >
-              <img src="image/files.png" alt="" class="w-7" />
-              <p class="text-[18px] text-[#e0fbfc]">HTML</p>
+
+            <div data-aos="fade-left">
+              <div
+                class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px] hover:scale-105 duration-300 transition-transform"
+              >
+                <img src="image/files.png" alt="" class="w-7" />
+                <p class="text-[18px] text-[#e0fbfc]">HTML</p>
+              </div>
             </div>
-            <div
-              class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px] hover:scale-105 duration-300 transition-transform"
-            >
-              <img src="image/bootstrap (1).png" alt="" class="w-7" />
-              <p class="text-[18px] text-[#e0fbfc]">Bootstrap</p>
+
+            <div data-aos="fade-left">
+              <div
+                class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px] hover:scale-105 duration-300 transition-transform"
+              >
+                <img src="image/bootstrap (1).png" alt="" class="w-7" />
+                <p class="text-[18px] text-[#e0fbfc]">Bootstrap</p>
+              </div>
             </div>
-            <div
-              class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px] hover:scale-105 duration-300 transition-transform"
-            >
-              <img src="image/css-file-format-symbol.png" alt="" class="w-7" />
-              <p class="text-[18px] text-[#e0fbfc]">Tailwindcss</p>
+
+            <div data-aos="fade-left">
+              <div
+                class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px] hover:scale-105 duration-300 transition-transform"
+              >
+                <img
+                  src="image/css-file-format-symbol.png"
+                  alt=""
+                  class="w-7"
+                />
+                <p class="text-[18px] text-[#e0fbfc]">Tailwindcss</p>
+              </div>
             </div>
           </div>
         </div>
@@ -238,12 +277,19 @@
 
       <!-- Projects Section -->
       <section id="projects" class="mt-5 md:mt-10">
-        <p class="font-bold text-[20px] text-[#fff380] text-center md:text-[25px]">
+        <p
+          class="font-bold text-[20px] text-[#fff380] text-center md:text-[25px]"
+          data-aos="fade-right"
+        >
           My Project
         </p>
 
         <div class="flex gap-6 justify-center mt-5 mx-auto flex-wrap max-w-7xl">
-          <a href="html/deskripsi3.html" class="w-full sm:w-80">
+          <a
+            href="html/deskripsi3.html"
+            class="w-full sm:w-80"
+            data-aos="fade-right"
+          >
             <div
               class="card border rounded-lg flex flex-col hover:scale-105 duration-300 transition-transform"
             >
@@ -266,7 +312,11 @@
             </div>
           </a>
 
-          <a href="html/deskripsi2.html" class="w-full sm:w-80">
+          <a
+            href="html/deskripsi2.html"
+            class="w-full sm:w-80"
+            data-aos="fade-up"
+          >
             <div
               class="card border rounded-lg flex flex-col hover:scale-105 duration-300 transition-transform"
             >
@@ -287,7 +337,11 @@
             </div>
           </a>
 
-          <a href="html/deskripsi1.html" class="w-full sm:w-80">
+          <a
+            href="html/deskripsi1.html"
+            class="w-full sm:w-80"
+            data-aos="fade-left"
+          >
             <div
               class="card border rounded-lg flex flex-col hover:scale-105 duration-300 transition-transform"
             >
@@ -317,6 +371,7 @@
         <div class="mx-auto flex-wrap">
           <p
             class="text-center justify-center mb-5 text-[#fff380] text-[25px] font-bold"
+            data-aos="fade-left"
           >
             Why Hire Me?
           </p>
@@ -325,6 +380,7 @@
           >
             <div
               class="border space-y-2 p-5 rounded-full px-7 border-[#6781b2]"
+              data-aos="fade-right"
             >
               <p class="text-[#fff380] font-bold text-[20px]">Fast Work</p>
               <p class="w-50 text-[#e0fbfc]">
@@ -334,6 +390,7 @@
             </div>
             <div
               class="border space-y-2 p-5 rounded-full px-7 border-[#6781b2]"
+              data-aos="fade-up"
             >
               <p class="text-[#fff380] font-bold text-[20px]">
                 Attractive Design
@@ -343,8 +400,11 @@
                 your needs.
               </p>
             </div>
+
+         
             <div
               class="border space-y-2 p-5 rounded-full px-7 border-[#6781b2]"
+              data-aos="fade-left"
             >
               <p class="text-[#fff380] font-bold text-[20px]">
                 Easy To Contact
@@ -359,18 +419,74 @@
       </section>
     </main>
 
-    <div id="contact" class="p-[20px] bg-[#1e242e] md:p-[40px] ">
-      <div class="ml-[17px]">
-        <p class="text-[#e0fbfc] text-[20px] font-bold">Get In Touch</p>
-        <p class="text-[#e0fbfc] text-[18px]">
-          For busines inquiry please send email to
-          <a
-            href="mailto:saputraariandi4@gmail.com"
-            class="text-[#fff380] italic"
-            >saputraariandi4@gmail.com</a
-          >
-        </p>
+    <!-- footer -->
+    <div id="contact" class="p-[20px] bg-[#1e242e] md:p-[40px]">
+      <div class="mx-[17px]">
+        <div class="flex flex-row justify-between">
+          <div>
+            <p class="text-[#e0fbfc] text-[20px] font-bold">Get In Touch</p>
+            <p class="text-[#e0fbfc] text-[18px]">
+              For busines inquiry please send email to
+              <a
+                href="mailto:ariandi.saputraaa@gmail.com"
+                class="text-[#fff380] italic"
+                >ariandi.saputraaa@gmail.com</a
+              >
+            </p>
+          </div>
+
+          <div>
+            <p class="text-[#e0fbfc] text-[20px] font-bold">Connect with me:</p>
+            <div class="flex gap-2">
+              <a
+                href="https://www.linkedin.com/in/ariandi-saputra-2a7095366/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="w-5 h-5 hover:scale-120 transition-transform duration-300"
+                  src="../image/linkedin 1.png"
+                  alt=""
+              /></a>
+              <a
+                href="https://www.instagram.com/prhaa.id?igsh=MTkwN2trMTg5Ynk4MA=="
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="w-5 h-5 hover:scale-120 transition-transform duration-300"
+                  src="../image/instagram 1.png"
+                  alt=""
+              /></a>
+              <a
+                href="https://www.fiverr.com/s/jjZQ0oa"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="../image/fiverr.png"
+                  alt=""
+                  class="w-4 h-4 hover:scale-120 transition-transform duration-300"
+                />
+              </a>
+              <a href="https://www.threads.com/@prhaa.id" target="_blank">
+                <img
+                  src="../image/threads.png"
+                  alt=""
+                  class="w-5 h-5 hover:scale-120 transition-transform duration-300"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
+
+    <script>
+      AOS.init({
+        duration: 900,
+        once: false,
+        offset: 100,
+      });
+    </script>
   </body>
 </html>
