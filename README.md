@@ -10,8 +10,10 @@ I focused on keeping the layout clean, minimal, and easy to navigate.
 - Simple and clean design with consistent color theme
 
 ## 🧩 Built With
-- **HTML5**  
-- **CSS3 / Bootstrap**  
+- **HTML**  
+- **CSS**  
+- **TAILWIND**  
+- **Bootstrap**  
 - **JavaScript (basic interactivity)**  
 
 
